@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Black+Han+Sans&family=Fredoka+One&family=Montserrat:wght@100;400&family=Nunito:wght@200;700&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000000;
+    min-height: 90vh;
+    font-family: 'Bakbak One', cursive;
+   
+}
+
+
+#container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#cabecalho{
+    background: url('./imagens/estrelas.jpg');
+    color: white;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+#cabecalho img {
+    width: 135px;
+}
+
+
+.inputs{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#data-valor{
+    color: white;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+#data{
+    padding: 22px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+  
+    
+}
+
+#botao{
+    width: auto;
+    padding: 18px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    background:white ;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#botao:hover{
+    background: #cac8c8;
+    cursor: pointer;
+}
+
+.conteudo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+ 
+}
+
+.conteudo p{
+    width: 70%;
+    margin-bottom: 10px;
+}
+
