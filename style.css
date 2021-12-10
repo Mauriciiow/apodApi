@@ -93,5 +93,31 @@ body{
 .conteudo p{
     width: 70%;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
+#imagens{
+    width: 35%;
+}
+
+@media (max-width: 600px){
+    #cabecalho h1{
+        font-size: 18px;
+    }
+
+    #titulo-imagem {
+        font-size: 20px;
+
+    }
+    .conteudo p{
+        width: 80%;
+       font-size: 20px;
+       text-align: justify;
+      
+        
+    }
+
+    #imagens{
+       width: 300px;
+    }
+}
