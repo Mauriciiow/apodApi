@@ -4,6 +4,8 @@ function buscarImagem() {
   let titulo = $('#titulo-imagem')
   let texto = $('#texto-imagem')
   let dataValor = $('#data-valor')
+
+
   $.ajax({
     url: `https://api.nasa.gov/planetary/apod?api_key=XnAgwqooFbXp4A6DFWFzbjxwI8VfeehnZvtKtCLt&date=${data}`,
     success: function (response) {
@@ -11,7 +13,6 @@ function buscarImagem() {
       titulo.text(response.title)
       texto.text(response.explanation)
       dataValor.text(data)
-      console.log(response);
       
     },
     error: function (error) {
@@ -23,5 +24,7 @@ function buscarImagem() {
 }
 let botao = $('#botao')
 botao.click(()=>{
+  let rodape = $('#rodape')
+  rodape.css('display', 'flex')
   return buscarImagem()
 }) 
